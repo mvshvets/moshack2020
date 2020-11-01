@@ -1,0 +1,35 @@
+.upload-dragger-control {
+    .ant-upload {
+        min-height: 70px;
+        padding: 0 !important;
+
+        .img-upload {
+            font-size: 25px;
+            color: #1890ff;
+            margin: 0 10px;
+        }
+
+        span {
+            vertical-align: middle;
+        }
+    }
+
+    button {
+        position: absolute;
+        right: -4px;
+        top: -3px;
+        padding: 0;
+        border: none;
+
+        svg {
+            font-size: 25px;
+            opacity: .8;
+            color: #666666;
+            background-color: white;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}

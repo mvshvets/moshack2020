@@ -1,0 +1,132 @@
+$selectRowTransition: 300ms;
+$tagFontSize: 14px;
+$tagBorderRadius: 10px;
+$tagAndOptionPadding: 8px 15px;
+$tagItemElMargin: 5px;
+$iconSize: 7px;
+
+.multi-select-control {
+    width: 100%;
+
+    .ant-select-selector {
+        border-radius: 5px;
+        border: 1px solid var(--g_control_border_color);
+        background-color: var(--g_elements_bg_color);
+    }
+
+    &_has-tags-cloud {
+        .ant-select-selection-item {
+            display: none;
+        }
+    }
+
+    &__dropdown {
+        padding: 0;
+        border: 1px solid var(--g_control_border_color);
+        background-color: var(--g_elements_bg_color);
+
+        .ant-select-tree-treenode {
+            padding: $tagAndOptionPadding;
+            transition: $selectRowTransition;
+            background-color: var(--g_elements_bg_color);
+            color: var(--g_text_color);
+
+            &:hover {
+                background-color: var(--g_select_row_bg_color_hover);
+                color: var(--g_text_color);
+            }
+
+            .ant-select-tree-checkbox-inner {
+                background-color: var(--g_checkbox_bg_color);
+                border: 1px solid var(--g_control_border_color);
+            }
+
+            &-checkbox-checked {
+                color: #ffffff;
+                font-weight: normal;
+
+                .ant-select-tree-checkbox-inner {
+                    background-color: var(--g_checkbox_color_checked);
+                    border-color: var(--g_checkbox_color_checked);
+                }
+            }
+        }
+
+        .ant-select-tree-switcher {
+            .ant-select-tree-switcher-icon {
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .ant-select-tree-node-content-wrapper {
+            transition: none;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.multi-select-tags {
+    margin-top: $tagItemElMargin * 2;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        background-color: var(--g_select_tag_bg_color);
+        display: flex;
+        align-items: center;
+        font-size: $tagFontSize;
+        color: #ffffff;
+        padding: $tagAndOptionPadding;
+        border-radius: $tagBorderRadius;
+        margin-right: $tagItemElMargin;
+        margin-bottom: $tagItemElMargin;
+        line-height: 1;
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        span {
+            margin-right: $tagItemElMargin;
+        }
+
+        i {
+            width: $iconSize;
+            height: $iconSize;
+            background-image: url(../../../image/icon-cancel.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            position: relative;
+        }
+    }
+}
+
+.ant-select-multiple .ant-select-selection-item {
+    background: var(--g_tag_bg_color);
+    border: 1px solid var(--g_tag_bg_color);
+}
+
+.ant-select-selection-item-remove .anticon-close {
+    color: var(--g_control_icon_color);
+}
+
+.ant-tree-select-dropdown .ant-select-tree-list-holder-inner .ant-select-tree-treenode {
+    background-color: var(--g_elements_bg_color);
+    color: var(--g_text_color);
+}
+
+.ant-select-tree .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+    background-color: var(--g_select_row_bg_color_checked);
+}
+
+.ant-select-tree .ant-select-tree-node-content-wrapper:hover {
+    background-color: var(--g_select_row_bg_color_hover);
+}

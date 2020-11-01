@@ -1,0 +1,27 @@
+/* отступы для компонент, формирующие главный контент через роуты */
+$g_default_page_padding: 20px 60px;
+
+// Colors
+$g_main_color: #2862AC;
+$g_text-color: #000000;
+$g_grey: #E6EBEC;
+
+// Media queries breakpoints
+// Extra small screen / phone
+$g_screen_xxs: 320px;
+$g_screen_xs: 480px;
+
+// Small screen / tablet
+$g_screen_sm: 576px;
+
+// Medium screen / desktop
+$g_screen_md: 768px;
+
+// Large screen / wide desktop
+$g_screen_lg: 992px;
+
+// Extra large screen / full hd
+$g_screen_xl: 1200px;
+
+// Extra extra large screen / large desktop
+$g_screen_xxl: 1600px;

@@ -1,0 +1,57 @@
+.map-popup {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    background-color: #fff;
+    max-height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
+    z-index: 99;
+    visibility: hidden;
+    width: 40%;
+    font-size: 18px;
+
+    button {
+        text-align: center;
+        border: none;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        position: relative;
+        color: rgba(0, 0, 0, 0.65);
+        background-color: #fff;
+    }
+
+    &__data {
+        padding: 20px 20px 0;
+        border-bottom: 1px solid #e0e0e0;
+
+        section {
+            margin: 50px 0;
+
+            b {
+                display: block;
+                text-align: center;
+                span {
+                    background-color: yellow;
+                    border-radius: 50%;
+                    padding: 7px;
+                }
+            }
+
+            div {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    &__info {
+        padding: 20px 20px 0;
+
+        h4 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        div {
+            margin: 10px 0;
+        }
+    }
+}

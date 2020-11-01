@@ -1,0 +1,11 @@
+.ant-form-item textarea.ant-input {
+    background-color: var(--g_elements_bg_color);
+    color: var(--g_text_color);
+    border-radius: 5px;
+    border: solid 1px var(--g_control_border_color);
+
+    &::placeholder {
+        color: var(--g_control_placeholder_text_color);
+        opacity: 1;
+    }
+}

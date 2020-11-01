@@ -1,0 +1,19 @@
+.select-control {
+    &_addon-after {
+        display: flex;
+        align-items: center;
+
+        .addon-after-content {
+            padding-left: 5px;
+        }
+    }
+
+    &_addon-after_column {
+        display: flex;
+        flex-direction: column;
+
+        .addon-after-content {
+            margin-top: 20px;
+        }
+    }
+}
